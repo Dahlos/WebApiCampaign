@@ -11,7 +11,7 @@ namespace WebApiCampaign.Controllers
 
     [ApiController]
     [Route("api/campaigns")]
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CampaignController : ControllerBase
     {
         private readonly ApplicationDbContext context;
